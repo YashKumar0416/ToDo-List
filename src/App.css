@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: linear-gradient(
+  90deg,
+  rgba(2 6 8) 0%,
+  rgba(14 67 112) 100%
+  );
+  font-family: 'Roboto', sans-serif;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.todo-app{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: start;
+  width: 520px;
+  min-height: 550px;
+  background: #161a2b;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  border: 1px solid #149fff;
+  box-shadow: 0 0 0 0.2rem #0b395a;
+  position: relative;
+}
+
+h1 {
+  margin: 32px 0;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 6px -1px 10px #149fff;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #149fff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.5;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+  color: #e2e2e2;
+}
+
+.todo-button.edit {
+  padding: 16px 22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-button:hover {
+  color: #0b395a;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px auto;
+  color: #e2e2e2;
+  border-bottom: 2px solid #149fff;
+  padding: 8px;
+  border-radius: 5px;
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #1081d1;
+}
+.delete-icon:hover {
+  color: red;
+}
+
+.edit-icon {
+  color: #1081d1;
+}
+
+.edit-icon:hover {
+  color: rgb(15, 190, 15);
+}
